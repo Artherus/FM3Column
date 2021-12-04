@@ -1,0 +1,108 @@
+body {
+  color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  margin: 1em 0;
+  font-family: "Big Shoulders Display", sans;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+
+button {
+  height: 4em;
+  width: 10em;
+  margin-top: 4em;
+  border-radius: 30px;
+  border: none;
+  font-weight: 400;
+}
+
+.section1, .section2, .section3 {
+  height: 24em;
+  width: 12em;
+  position: absolute;
+  top: 6em;
+  padding: 2em 3em;
+}
+
+.section1 {
+  background-color: hsl(31, 77%, 52%);
+  left: 15em;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.section1 button {
+  color: hsl(31, 77%, 52%);
+}
+
+.section2 {
+  background-color: hsl(184, 100%, 22%);
+  left: 33em;
+}
+
+.section2 button {
+  color: hsl(184, 100%, 22%);
+}
+
+.section3 {
+  background-color: hsl(179, 100%, 13%);
+  left: 51em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.section1 button:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.section2 button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.section3 button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 375px) {
+  .section1, .section2, .section3 {
+    left: 1em;
+    height: 22em;
+  }
+
+  .section1 {
+    top: 3em;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .section2 {
+    top: 29em;
+  }
+
+  .section3 {
+    top: 55em;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    
+  }
+
+  button {
+    margin-top: 1em;
+  }
+}
